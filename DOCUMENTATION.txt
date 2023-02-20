@@ -1,0 +1,166 @@
+Introduction to Basic Database Concepts 
+In this module we learn about Basic concepts and advantages of DBMS and limitations of file management system, and also about 3 data base models .
+
+1. What is Data, Field, Record and database? 
+--> Data: Data, in the context of databases, refers to all the single items that are stored in a database, either individually or as a set. Data in a database is primarily stored in database tables, which are organized into columns that dictate the data types stored therein. 
+Field: Contains data about one aspect of the table subject, such as first name or e-mail address.
+Record: Contains specific data, like information about a particular employee or a product. 
+Database: A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). 
+
+2. Limitations of File Management System. 
+--> 1. Data Redundancy: redundancy means repetition of same data in different tables. Redundancy leads to excess data storage and may cause data inconsistency.
+
+2. Data Inconsistency: When same data is managed differently in different places leads to data inconsistency. Data inconsistency creates unreliable information, because it will be difficult to determine which version of information is correct.
+
+3. Data Isolation: In file system because data mapping is not supported, so all the files are created and kept in isolation. This is called data isolation and it becomes very difficult to keep database in same state after the execution of a transaction.
+
+4. Data Dependence: data are stored in a specific format or structure in a file. If the structure or format is changes, all the existing application programs accessing that file also need to change. Otherwise, the programs may not work correctly.
+
+5. Controlled Data Sharing: it is very difficult to provide control of data at different level for different user in a file system. 
+
+3. Basic Concepts of Advantages of DBMS. 
+--> 1. Fast Data Sharing - Database administration makes it possible for consumers to access more and better-managed data. DBMS enables end users to quickly scan their environment and react to any alterations made there. 
+
+2. User Friendly - Data are presented in a straightforward and logical manner by database management systems (DBMS). It is simple to carry out many activities, such as the addition, deletion, or creation of files or data.
+
+3. Secured Data - The likelihood of security problems increases as a database becomes more functional and accessible.
+
+4. Reduces Data Inconsistency and Redundancy - The major issues faced during the process of storing data are inconsistency and redundancy. Inconsistent data may lead to a big loss to an individual or a business model and the storage capacity is not utilized properly because of the data redundancy. When multiple copies with different versions or values of the same data exist in various locations, then it causes inconsistency. Data Redundancy and inconsistency can both be significantly decreased by properly designing a database with the help of a database management system.
+
+4. Exploring Relational DBMS 
+--> RDBMS stands for Relational Database Management System.
+All modern database management systems like SQL, MS SQL Server, IBM DB2, ORACLE, My-SQL, and Microsoft Access are based on RDBMS.
+It is called Relational Database Management System (RDBMS) because it is based on the relational model introduced by E.F. Codd.
+
+Everything in a relational database is stored in the form of relations. The RDBMS database uses tables to store data. A table is a collection of related data entries and contains rows and columns to store data. Each table represents some real-world objects such as person, place, or event about which information is collected. The organized collection of data into a relational table is known as the logical view of the database.
+
+Properties of a Relation:
+
+Each relation has a unique name by which it is identified in the database.
+Relation does not contain duplicate tuples.
+The tuples of a relation have no specific order.
+All attributes in a relation are atomic, i.e., each cell of a relation contains exactly one value.
+
+5. Understanding Client and Server 
+--> Client: The client relies on sending a request to another program in order to access a service made available by a server. 
+Server: The server runs one or more programs that share resources with and distribute work among clients
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Introduction to SQL Server 
+In this module we learn about SQL Server, history of sql server, types of system databases, communication between frontend and backend and sql server editions. 
+1. What is SQL Server Version history and different editions 
+--> 
+
+2. Basic Features Components and Tools 
+-->
+
+3. Starting and Stopping SQL Server Instances / Services 
+-->
+
+4. Introduction to Management Studio 
+-->
+
+5. Types of System Databases in SQL 
+-->
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2: Introduction to SQL 
+In this module we learn about types of sql statements, databases in sql server, how to create a database, datatypes in sql server,and about DDL Statements. 
+1. Basics of SQL Types of SQL Statements 
+--> 1. Data Definition Language (DDL) :
+DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+Here are some commands that come under DDL:
+CREATE
+ALTER
+DROP
+TRUNCATE
+
+2. Data Manipulation Language (DML) :
+DML commands are used to modify the database. It is responsible for all form of changes in the database.
+The command of DML is not auto-committed that means it can't permanently save all the changes in the database. They can be rollback.
+Here are some commands that come under DML:
+INSERT
+UPDATE
+DELETE
+
+3. Data Control Language
+DCL commands are used to grant and take back authority from any database user.
+Here are some commands that come under DCL:
+Grant
+Revoke
+
+4. Transaction Control Language
+TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.
+These operations are automatically committed in the database that's why they cannot be used while creating tables or dropping them.
+Here are some commands that come under TCL:
+COMMIT
+ROLLBACK
+SAVEPOINT
+
+5. Data Query Language
+DQL is used to fetch the data from the database.
+It uses only one command:
+SELECT
+
+
+2. DDL, DML, DQL, DCL and TCL 
+--> 1. Data Definition Language (DDL) :
+DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+Here are some commands that come under DDL:
+CREATE
+ALTER
+DROP
+TRUNCATE
+
+2. Data Manipulation Language (DML) :
+DML commands are used to modify the database. It is responsible for all form of changes in the database.
+The command of DML is not auto-committed that means it can't permanently save all the changes in the database. They can be rollback.
+Here are some commands that come under DML:
+INSERT
+UPDATE
+DELETE
+
+3. Data Control Language
+DCL commands are used to grant and take back authority from any database user.
+Here are some commands that come under DCL:
+Grant
+Revoke
+
+4. Transaction Control Language
+TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.
+These operations are automatically committed in the database that's why they cannot be used while creating tables or dropping them.
+Here are some commands that come under TCL:
+COMMIT
+ROLLBACK
+SAVEPOINT
+
+5. Data Query Language
+DQL is used to fetch the data from the database.
+It uses only one command:
+SELECT
+
+3. Create Database using Management Studio 
+-->
+
+4. Data types in SQL Server
+-->
+ 
+5. Exploring DDL Statements on Table using Management Studio 
+-->
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. DDL and DML Statements 
+In this module we learn about how to create a table, alter and drop a table , and about DML statements ,like insert update and delete statements. 
+1. Why write statements in Frontends? 
+-->
+
+2. Create, Alter and Drop Table Insert, 
+--> 
+
+3. Update and Delete Statement Truncate Statement 
+-->
